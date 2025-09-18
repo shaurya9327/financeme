@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                withMaven(maven: 'Maven-3.9.0') { // Change to your Maven tool name in Jenkins
+                withMaven(maven: 'Maven-3.9.11') { // Change to your Maven tool name in Jenkins
                     sh 'mvn clean package'
                 }
             }
